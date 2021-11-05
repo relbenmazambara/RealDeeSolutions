@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="manageemployee" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="93011c71-bf77-43fd-bae5-7990e1eadcb5">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ManageEmployeesReport.dbcon"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `Employeeid`, `Name`, `Surname`,  `Gender`, `Phone`, `Address`, `Designation`,  `department` FROM `employeedetailstable`]]>
+	</queryString>
+	<field name="Employeeid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Employeeid"/>
+		<property name="com.jaspersoft.studio.field.label" value="Employeeid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employeedetailstable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employeedetailstable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Surname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Surname"/>
+		<property name="com.jaspersoft.studio.field.label" value="Surname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employeedetailstable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Gender"/>
+		<property name="com.jaspersoft.studio.field.label" value="Gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employeedetailstable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Phone" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Phone"/>
+		<property name="com.jaspersoft.studio.field.label" value="Phone"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employeedetailstable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Address"/>
+		<property name="com.jaspersoft.studio.field.label" value="Address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employeedetailstable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Designation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Designation"/>
+		<property name="com.jaspersoft.studio.field.label" value="Designation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employeedetailstable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="department" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="department"/>
+		<property name="com.jaspersoft.studio.field.label" value="department"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employeedetailstable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Employeeid">
+		<groupExpression><![CDATA[$F{Employeeid}]]></groupExpression>
+	</group>
+	<group name="Name">
+		<groupExpression><![CDATA[$F{Name}]]></groupExpression>
+	</group>
+	<group name="Surname">
+		<groupExpression><![CDATA[$F{Surname}]]></groupExpression>
+	</group>
+	<group name="Gender">
+		<groupExpression><![CDATA[$F{Gender}]]></groupExpression>
+	</group>
+	<group name="Phone">
+		<groupExpression><![CDATA[$F{Phone}]]></groupExpression>
+	</group>
+	<group name="Address">
+		<groupExpression><![CDATA[$F{Address}]]></groupExpression>
+	</group>
+	<group name="Designation">
+		<groupExpression><![CDATA[$F{Designation}]]></groupExpression>
+	</group>
+	<group name="department">
+		<groupExpression><![CDATA[$F{department}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="10" width="390" height="61" uuid="f668cd89-ebb8-4972-b748-4e0e213fc1c7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Algerian" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Manage Employee Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement x="90" y="26" width="91" height="21" uuid="c9c97fd6-9c55-4323-a2e2-eb0f7f767301"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bodoni Bd BT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="26" width="91" height="21" uuid="5a15e7b2-12a7-4baf-b252-a1924a736a2d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bodoni Bd BT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Phone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="26" width="91" height="21" uuid="82638d8d-23bb-430e-8942-8ae38162bfa5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bodoni Bd BT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="590" y="26" width="101" height="22" uuid="bdd7a568-e7d2-4429-abfe-dfbf9d3b8e45"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bodoni Bd BT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Disgination]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="710" y="26" width="100" height="21" uuid="c9b7e33a-eed1-48f7-9418-eeeb96799e3e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bodoni Bd BT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="26" width="71" height="21" uuid="38573ac5-5e60-48c6-90dc-2c16044ac233"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bodoni Bd BT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Surname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="26" width="71" height="21" uuid="d784e2e1-3139-46ee-9213-f73413c7ab66"/>
+				<textElement>
+					<font fontName="Bodoni Bd BT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="26" width="100" height="21" uuid="d642ff71-baba-462d-8df2-245eec55bb9c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bodoni Bd BT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee ID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="-11" y="10" width="79" height="21" uuid="852c55b3-d85b-4743-9152-63c7b1864ff0"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Employeeid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="10" width="91" height="20" uuid="da70a7c3-8cc8-4b0a-9c8d-f2013e0f4c30"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="71" height="20" uuid="9aa74214-310d-4405-89f0-74c6442af891"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Surname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="0" width="71" height="21" uuid="ff4f2150-0224-4f70-bcd1-63c76e663b9c"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="0" width="101" height="21" uuid="4c107003-f010-40e5-89df-732794376ce9"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Phone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="0" width="91" height="21" uuid="acb68927-ddd5-439f-80a1-673fcc928509"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="590" y="0" width="101" height="21" uuid="63e87f2e-5dd3-4603-b27c-866b067b436f"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Designation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="705" y="0" width="81" height="21" uuid="d684a0b0-41a5-4b74-b2e5-e55ace5642f7"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="5" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="-11" y="29" width="131" height="21" uuid="79be7684-4b15-43df-9f15-dc0b170c748e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="120" y="30" width="110" height="21" uuid="87caa2ea-c2a3-4d54-bd80-81a59ae98784"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="740" y="30" width="81" height="21" uuid="2ad144c0-c35d-4e5e-90b7-95630f71f07a"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

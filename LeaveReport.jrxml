@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LeaveReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689c2b82-6f85-455f-9fbf-23ef8e0fe81d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DatabaseLeave"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `Employeeid`, `Leavetype`, `From`, `To`, `Reason` FROM leavetable]]>
+	</queryString>
+	<field name="Employeeid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Employeeid"/>
+		<property name="com.jaspersoft.studio.field.label" value="Employeeid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leavetable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Leavetype" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Leavetype"/>
+		<property name="com.jaspersoft.studio.field.label" value="Leavetype"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leavetable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="From" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="From"/>
+		<property name="com.jaspersoft.studio.field.label" value="From"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leavetable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="To" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="To"/>
+		<property name="com.jaspersoft.studio.field.label" value="To"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leavetable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Reason" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Reason"/>
+		<property name="com.jaspersoft.studio.field.label" value="Reason"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="leavetable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="60" y="10" width="401" height="61" uuid="d2c0bc86-3e6d-4bbc-8d87-0edda53a93a1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Algerian" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMPLOYEE LEAVE REPORT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="7" width="100" height="31" uuid="1957c43b-1e62-409e-9b32-80231db17d25"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMPLOYEE ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="10" width="111" height="28" uuid="066d7db6-879b-4dc8-a7ef-d965580d9e71"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEAVE TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="10" width="91" height="26" uuid="8a141845-f69e-4fb6-aabd-55dc52c2a35e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FROM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="10" width="91" height="28" uuid="b9522352-69e8-4234-848e-3746b915033f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="10" width="140" height="26" uuid="8cc03735-6bc5-4ef7-91dc-53dbc304719b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REASON]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="0" width="92" height="21" uuid="f0b1e305-f8d0-4317-ab7b-95f826dd7cb3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Employeeid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="-3" width="101" height="21" uuid="5f29b115-ccb6-4909-a216-eeacc135c5c6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Leavetype}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="91" height="21" uuid="a3153eba-2339-461d-bff2-6fa63912b693"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{From}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="0" width="81" height="21" uuid="72c0bc9a-fc0e-4068-a21f-0d284836b45b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{To}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="141" height="40" uuid="5c8dff76-501f-46d1-9ccc-6940a2973ba1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Reason}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="-10" y="19" width="111" height="31" uuid="6a1cab18-0ec6-4296-8555-4c90dae87c3a"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="120" y="20" width="81" height="31" uuid="53a409dc-6cca-4538-88be-f0b3cb3bbf85"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="20" width="91" height="31" uuid="5199ff5a-6d78-48df-a2f3-387c1f0d3005"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
